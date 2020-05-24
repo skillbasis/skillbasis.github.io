@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Skillbasis.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://skillbasis.github.io/pka-common.js"></script>
+  <style>
+  body{
+      font-family: Verdana,sans-serif;
+    line-height: 1.5;
+	}
+  </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <style>
+  .jumbotron{
+         background-color: #4a89dc!important;
+	}
+  </style>
+  
+</head>
+<body>
+
+<div class="jumbotron text-center" >
+<script>
+function cabecalho_pka(){
+var online = navigator.onLine;
+	if (online==false){
+	document.write('<span style="color: #ffffff;"><h1>skillbasis.com</h1><br> <h3>the HUB of champions</h3></span>');
+	}else{
+	load_cabecalho_pka();
+	}
+}//end function
+ cabecalho_pka();
+ 
+ </script>
+
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+    <div class="alert alert-danger">
+  <strong>CCNA 1 ITN Practice Skills Assessment!</strong> For this answer and other resources visit:  <a href="https://skillbasis.com">https://skillbasis.com/</a>
+</div>
+    </div>
+    <div class="col-sm-12">
+      <h1>CCNA Routing and Switching - Introduction to Networks</h1>
+      <h2>ITN Practice Skills Assessment - Packet Tracer</h2>
+      <div class="alert alert-info">A few things to keep in mind while completing this activity: <br>
+1. Do not use the browser Back button or close or reload any exam windows during the exam.<br>
+2. Do not close Packet Tracer when you are done. It will close automatically.<br>
+3. Click the Submit Assessment button in the browser window to submit your work.<br></div>
+    </div>
+    <div class="col-sm-12">
+      <h3>Introduction </h3>        
+      <p>In this assessment, you will configure devices in an IPv4/IPv6 network. For the sake of time, you will not be asked to perform all configurations on all network devices as you may be required to do in a real network or other assessment. Instead, you will use the skills and knowledge that you have learned in the labs in this course to configure the Building 1 router. In addition, you will address the hosts on two LANs with IPv4 and IPv6 addresses, activate and address the management interface of the Second Floor Switch, and back up a device configuration to a TFTP server.
+
+You will receive one of several topologies.</p>
+      <p>You are not required to configure the First Floor Switch, and you will not be able to access it in this practice skills assessment activity.
+
+All IOS device configurations should be completed from a direct terminal connection to the device console. In addition, many values that are required to complete the configurations have not been given to you. In those cases, create the values that you need to complete the requirements. For values that have been supplied to you, they must be entered exactly as they appear in order for you to get full credit for your configuration. </p>
+
+<p>You will practice and be assessed on the following skills: 
+<ul>
+<li>	Configuration of initial IOS device settings</li>
+<li>	Design and calculation of IPv4 addressing</li>
+<li>	Configuration of IOS device interfaces including IPv4 and IPv6 addressing when appropriate</li>
+<li>	Addressing of network hosts with IPv4 and IPv6 addresses</li>
+<li>	Enhancing device security, including configuration of the secure transport protocol for remote device configuration</li>
+<li>	Configuration of a switch management interface</li> </p>
+</ul>
+  <h2>Requirements by device: </h2>        
+    <h3>Building 1 router:</h3>
+<strong>Building 1 router:</strong><br/>
+•	Configuration of initial router settings<br/>
+•	Interface configuration and IPv4 and IPv6 addressing<br/>
+•	Device security enhancement or device hardening<br/>
+•	Secure transport for remote configuration connections as covered in the labs<br/>
+•	Backup of the configuration file to a TFTP server
+<br/>
+<strong>Second Floor Switch:</strong><br/>
+•	Enabling basic remote management by Telnet
+<br/>
+<strong>PC and Server hosts:</strong><br/>
+•	IPv4 full addressing<br/>
+•	IPv6 addressing
+<br/>
+<h4>Addressing Table</h4>
+<table style="height: 656px;" width="659" class="table table-condensed">
+<tbody>
+<tr>
+<td style="width: 101px; text-align: center;" rowspan="2"><strong> Device </strong></td>
+<td style="width: 102px; text-align: center;" rowspan="2"><strong> Interface </strong></td>
+<td style="width: 146px; text-align: center;"><strong> IPv4 Address</strong></td>
+<td style="width: 172px; text-align: center;"><strong>Subnet Mask</strong></td>
+<td style="width: 104px; text-align: center;"><strong>IPv4 Default Gateway</strong></td>
+</tr>
+<tr>
+<td style="width: 324px; text-align: center;" colspan="2"><strong>IPv6 Address</strong></td>
+<td style="width: 104px; text-align: center;"><strong> IPv6 Default Gateway</strong></td>
+</tr>
+<tr>
+<td style="width: 101px; text-align: center;" rowspan="5"> Building 1</td>
+<td style="width: 102px; text-align: center;" rowspan="2">G0/0</td>
+<td style="width: 146px; text-align: center;"></td>
+<td style="width: 172px; text-align: center;"></span></td>
+<td style="width: 104px; text-align: center;">N/A</td>
+</tr>
+<tr>
+<td style="width: 146px; text-align: center;" colspan="2">2001:DB8:ACAD:A::1/64</td>
+<td style="width: 104px; text-align: center;">N/A</td>
+</tr>
+<tr>
+<td style="width: 102px; text-align: center;" rowspan="2">G0/1</td>
+<td style="width: 146px; text-align: center;"></td>
+<td style="width: 172px; text-align: center;"></td>
+<td style="width: 104px; text-align: center;"> N/A</td>
+</tr>
+<tr>
+<td style="width: 146px; text-align: center;" colspan="2">2001:DB8:ACAD:B::1/64</td>
+<td style="width: 104px; text-align: center;">N/A</td>
+</tr>
+<tr>
+<td style="width: 102px; text-align: center;"> Link Local</td>
+<td style="width: 146px; text-align: center;" colspan="2">FE80::1</td>
+<td style="width: 104px; text-align: center;">N/A</td>
+</tr>
+<tr>
+<td style="width: 101px; text-align: center;" rowspan="2">  Second Floor Switch</td>
+<td style="width: 102px; text-align: center;" rowspan="2">Vlan 1</td>
+<td style="width: 146px; text-align: center;"></td>
+<td style="width: 172px; text-align: center;"></td>
+<td style="width: 104px; text-align: center;"></td>
+</tr>
+<tr>
+<td style="width: 146px; text-align: center;"> N/A</td>
+<td style="width: 172px; text-align: center;">N/A</td>
+<td style="width: 104px; text-align: center;">N/A</td>
+</tr>
+<tr>
+<td style="width: 101px; text-align: center;" rowspan="2">  Host 1</td>
+<td style="width: 102px; text-align: center;" rowspan="2">NIC</td>
+<td style="width: 146px; text-align: center;"></td>
+<td style="width: 172px; text-align: center;"></td>
+<td style="width: 104px; text-align: center;"></td>
+</tr>
+<tr>
+<td style="width: 146px; text-align: center;" colspan="2">2001:DB8:ACAD:A::FF</td>
+<td style="width: 104px; text-align: center;"></td>
+</tr>
+<tr>
+<td style="width: 101px; text-align: center;" rowspan="2">  Host 2</td>
+<td style="width: 102px; text-align: center;" rowspan="2">NIC</td>
+<td style="width: 146px; text-align: center;"></td>
+<td style="width: 172px; text-align: center;"></td>
+<td style="width: 104px; text-align: center;"></td>
+</tr>
+<tr>
+<td style="width: 146px; text-align: center;" colspan="2">2001:DB8:ACAD:A::15</td>
+<td style="width: 104px; text-align: center;"></td>
+</tr>
+<tr>
+<td style="width: 101px; text-align: center;" rowspan="2">Host 3</td>
+<td style="width: 102px; text-align: center;" rowspan="2">NIC</td>
+<td style="width: 146px; text-align: center;"></td>
+<td style="width: 172px; text-align: center;"></td>
+<td style="width: 104px; text-align: center;"></td>
+</tr>
+<tr>
+<td style="width: 146px; text-align: center;" colspan="2"></td>
+<td style="width: 104px; text-align: center;"></td>
+</tr>
+<tr>
+<td style="width: 101px; text-align: center;" rowspan="2">  TFTP Server</td>
+<td style="width: 102px; text-align: center;" rowspan="2">NIC</td>
+<td style="width: 146px; text-align: center;"></td>
+<td style="width: 172px; text-align: center;"></td>
+<td style="width: 104px; text-align: center;"></td>
+</tr>
+<tr>
+<td style="width: 146px; text-align: center;" colspan="2">2001:DB8:ACAD:B::15</td>
+<td style="width: 104px; text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+
+<h2>Instructions</h2>
+
+<h3>Step 1: Determine the IP Addressing Scheme.</h3>
+
+Design an IPv4 addressing scheme and complete the Addressing Table based on the following requirements. Use the table to help you organize your work.
+
+<table style="height: 184px; width: 697px;"  class="table table-hover">
+<tbody>
+<tr>
+<td style="width: 81px; text-align: center;"><strong>Subnet Number</strong></td>
+<td style="width: 81px; text-align: center;"><strong>Hosts Available</strong></td>
+<td style="width: 128px; text-align: center;"><strong>Network Address</strong></td>
+<td style="width: 36px; text-align: center;"><strong>Beginning Address</strong></td>
+<td style="width: 82px; text-align: center;"><strong>Ending Address</strong></td>
+<td style="width: 79px; text-align: center;"><strong>Mask</strong></td>
+<td style="width: 85px; text-align: center;"><strong>Assignment</strong></td>
+</tr>
+<tr>
+<td style="width: 81px; text-align: center;">1</td>
+<td style="width: 81px; text-align: center;">30</td>
+<td style="width: 128px; text-align: center;">192.168.1.0</td>
+<td style="width: 36px; text-align: center;">192.168.1.1</td>
+<td style="width: 82px; text-align: center;"></td>
+<td style="width: 79px; text-align: center;"></td>
+<td style="width: 85px; text-align: center;"></td>
+</tr>
+<tr>
+<td style="width: 81px; text-align: center;">2</td>
+<td style="width: 81px; text-align: center;"></td>
+<td style="width: 128px; text-align: center;"></td>
+<td style="width: 36px; text-align: center;"></td>
+<td style="width: 82px; text-align: center;"></td>
+<td style="width: 79px; text-align: center;"></td>
+<td style="width: 85px; text-align: center;"></td>
+</tr>
+<tr>
+<td style="width: 81px; text-align: center;">3</td>
+<td style="width: 81px; text-align: center;"></td>
+<td style="width: 128px; text-align: center;"></td>
+<td style="width: 36px; text-align: center;"></td>
+<td style="width: 82px; text-align: center;"></td>
+<td style="width: 79px; text-align: center;"></td>
+<td style="width: 85px; text-align: center;"></td>
+</tr>
+<tr>
+<td style="width: 81px; text-align: center;">4</td>
+<td style="width: 81px; text-align: center;"></td>
+<td style="width: 128px; text-align: center;"></td>
+<td style="width: 36px; text-align: center;"></td>
+<td style="width: 82px; text-align: center;"></td>
+<td style="width: 79px; text-align: center;"></td>
+<td style="width: 85px; text-align: center;">First Floor LAN Subnet</td>
+</tr>
+<tr>
+<td style="width: 81px; text-align: center;">5</td>
+<td style="width: 81px; text-align: center;"></td>
+<td style="width: 128px; text-align: center;"></td>
+<td style="width: 36px; text-align: center;"></td>
+<td style="width: 82px; text-align: center;"></td>
+<td style="width: 79px; text-align: center;"></td>
+<td style="width: 85px; text-align: center;"></td>
+</tr>
+<tr>
+<td style="width: 81px; text-align: center;">6</td>
+<td style="width: 81px; text-align: center;"></td>
+<td style="width: 128px; text-align: center;"></td>
+<td style="width: 36px; text-align: center;"></td>
+<td style="width: 82px; text-align: center;"></td>
+<td style="width: 79px; text-align: center;"></td>
+<td style="width: 85px; text-align: center;">Second Floor LAN Subnet</td>
+</tr>
+</tbody>
+</table>
+<br/>
+a. Subnet the 192.168.1.0/24 network to provide 30 host addresses per subnet while wasting the fewest addresses.
+<br/>
+b. Assign the fourth subnet to the First Floor LAN.
+<br/>
+c. Assign the last network host address (the highest) in this subnet to the G0/0 interface on Building 1.
+<br/>
+d. Starting with the fifth subnet, subnet the network again so that the new subnets will provide 14 host addresses per subnet while wasting the fewest addresses.
+<br/>
+e. Assign the second of these new 14-host subnets to the Second Floor LAN.
+<br/>
+f. Assign the last network host address (the highest) in the Second Floor LAN subnet to the G0/1 interface of the Building 1 router.
+<br/>
+g. Assign the second to the last address (the second highest) in this subnet to the VLAN 1 interface of the Second Floor Switch.
+<br/>
+h. Configure addresses on the hosts using any of the remaining addresses in their respective subnets.<br/>
+
+<h3>Step 2: Configure the Building 1 Router.</h3>
+
+a. Configure the Building 1 router with all initial configurations that you have learned in the course so far:<br/>
+•	Configure the router hostname: <strong>Middle</strong><br/>
+•	Protect device configurations from unauthorized access with the encrypted privileged exec password.<br/>
+•	Secure all access lines into the router using methods covered in the course and labs.<br/>
+•	Require newly-entered passwords must have a minimum length of 10 characters.<br/>
+•	Prevent all passwords from being viewed in clear text in device configuration files.<br/>
+•	Configure the router to only accept in-band management connections over the protocol that is more secure than Telnet, as was done in the labs.  Use the value <strong>1024</strong> for encryption key strength.<br/>
+•	Configure local user authentication for in-band management connections. Create a user with the name <strong>netadmin</strong> and a secret password of <strong>Cisco_CCNA5</strong>  Give the user the highest administrative privileges. Your answer must match these values exactly. <br/>
+<BR/>b. Configure the two Gigabit Ethernet interfaces using the IPv4 addressing values you calculated and the IPv6 values provided in the addressing table.<br/>
+•	Reconfigure the link local addresses to the value shown in the table.<br/> 
+•	Document the interfaces in the configuration file.
+<h3>Step 3: Configure the Second Floor Switch.</h3>
+
+Configure Second Floor Switch for remote management over Telnet.<br/>
+
+<h3>Step 4: Configure and Verify Host Addressing.</h3>
+
+a. Use the IPv4 addressing from Step 1 and the IPv6 addressing values provided in the addressing table to configure all host PCs with the correct addressing.<br/>
+b. Use the router interface link-local address as the IPv6 default gateways on the hosts.<br/>
+c. Complete the configuration of the TFTP server using the IPv4 addressing  values from Step 1 and the values in the addressing table.
+
+
+<p>    
+<script>
+function rodape_pka(){
+var online = navigator.onLine;
+	if (online==false){
+	document.write('<div class="alert alert-danger"><strong>CCNA 1 ITN Practice Skills Assessment!</strong> For this answer and other resources visit:  <a href="https://skillbasis.com">https://skillbasis.com/</a></div>');
+	}else{
+	load_rodape_pka();
+	}
+}//end function
+ rodape_pka();
+ 
+ </script>
+
+
+
+</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
